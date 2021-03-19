@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuffle Card Deck App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Shuffle Card Deck</h1>
+        <div class="container">
+            <div class="panel">
+                <div class="screen" id="screen">
+                    <div class="result" id="result" style="color: white;"></div>
+                </div>
+                <div class="input">
+                    <div>
+                        <button id="cancelBtn">X</button>
+                        <p id="error"></p>
+                    </div>
+                    <div class="buttons">
+                        <input type="number" min="1" max="10000" placeholder="Enter a number to start" id="inputVal">
+                        <button id="jsRandom">JS Random</button>
+                        <button id="xorshift">Xorshift</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
